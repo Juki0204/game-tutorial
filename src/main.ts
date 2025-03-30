@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 import TestScene from "./scenes/TestScene";
 
+let game;
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO, //レンダリング形式（WEBGL, CANVAS, AUTO）
   width: 800, //レンダリングサイズ
@@ -21,4 +22,4 @@ const config: Phaser.Types.Core.GameConfig = {
   ]
 }
 
-const game = new Phaser.Game(config);
+game = new Phaser.Game(config);
